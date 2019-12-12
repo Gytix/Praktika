@@ -1,0 +1,10 @@
+C:\Users\Gytis\source\repos\Mototecha\Mototecha\bin\Debug\Mototecha.exe.config
+C:\Users\Gytis\source\repos\Mototecha\Mototecha\bin\Debug\Mototecha.exe
+C:\Users\Gytis\source\repos\Mototecha\Mototecha\bin\Debug\Mototecha.pdb
+C:\Users\Gytis\source\repos\Mototecha\Mototecha\obj\Debug\Mototecha.csprojAssemblyReference.cache
+C:\Users\Gytis\source\repos\Mototecha\Mototecha\obj\Debug\Mototecha.Form1.resources
+C:\Users\Gytis\source\repos\Mototecha\Mototecha\obj\Debug\Mototecha.Properties.Resources.resources
+C:\Users\Gytis\source\repos\Mototecha\Mototecha\obj\Debug\Mototecha.csproj.GenerateResource.cache
+C:\Users\Gytis\source\repos\Mototecha\Mototecha\obj\Debug\Mototecha.csproj.CoreCompileInputs.cache
+C:\Users\Gytis\source\repos\Mototecha\Mototecha\obj\Debug\Mototecha.exe
+C:\Users\Gytis\source\repos\Mototecha\Mototecha\obj\Debug\Mototecha.pdb
