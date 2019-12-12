@@ -1,0 +1,2 @@
+nauji moto
+tipas, gamintojas, modelis, metai, kaina, spalva, variklis, kubatura, garantija, greitis, sukimo_m
