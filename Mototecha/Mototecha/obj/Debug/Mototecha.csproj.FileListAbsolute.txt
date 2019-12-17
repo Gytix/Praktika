@@ -8,3 +8,14 @@ C:\Users\Gytis\source\repos\Mototecha\Mototecha\obj\Debug\Mototecha.csproj.Gener
 C:\Users\Gytis\source\repos\Mototecha\Mototecha\obj\Debug\Mototecha.csproj.CoreCompileInputs.cache
 C:\Users\Gytis\source\repos\Mototecha\Mototecha\obj\Debug\Mototecha.exe
 C:\Users\Gytis\source\repos\Mototecha\Mototecha\obj\Debug\Mototecha.pdb
+C:\Users\Gytis\Desktop\Kolegija.3 pusmetis\Antroji programavimo praktika\Praktika\Mototecha\Mototecha\obj\Debug\Mototecha.csprojAssemblyReference.cache
+C:\Users\Gytis\Desktop\Kolegija.3 pusmetis\Antroji programavimo praktika\Praktika\Mototecha\Mototecha\obj\Debug\Mototecha.Form1.resources
+C:\Users\Gytis\Desktop\Kolegija.3 pusmetis\Antroji programavimo praktika\Praktika\Mototecha\Mototecha\obj\Debug\Mototecha.Form2.resources
+C:\Users\Gytis\Desktop\Kolegija.3 pusmetis\Antroji programavimo praktika\Praktika\Mototecha\Mototecha\obj\Debug\Mototecha.Properties.Resources.resources
+C:\Users\Gytis\Desktop\Kolegija.3 pusmetis\Antroji programavimo praktika\Praktika\Mototecha\Mototecha\obj\Debug\Mototecha.csproj.GenerateResource.cache
+C:\Users\Gytis\Desktop\Kolegija.3 pusmetis\Antroji programavimo praktika\Praktika\Mototecha\Mototecha\obj\Debug\Mototecha.csproj.CoreCompileInputs.cache
+C:\Users\Gytis\Desktop\Kolegija.3 pusmetis\Antroji programavimo praktika\Praktika\Mototecha\Mototecha\obj\Debug\Mototecha.exe
+C:\Users\Gytis\Desktop\Kolegija.3 pusmetis\Antroji programavimo praktika\Praktika\Mototecha\Mototecha\obj\Debug\Mototecha.pdb
+C:\Users\Gytis\Desktop\Kolegija.3 pusmetis\Antroji programavimo praktika\Praktika\Mototecha\Mototecha\bin\Debug\Mototecha.exe.config
+C:\Users\Gytis\Desktop\Kolegija.3 pusmetis\Antroji programavimo praktika\Praktika\Mototecha\Mototecha\bin\Debug\Mototecha.exe
+C:\Users\Gytis\Desktop\Kolegija.3 pusmetis\Antroji programavimo praktika\Praktika\Mototecha\Mototecha\bin\Debug\Mototecha.pdb

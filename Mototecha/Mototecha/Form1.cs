@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Mototecha
 {
@@ -29,10 +30,15 @@ namespace Mototecha
 
         private void Label4_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            var Form2 = new Form();
-            Form2.Show();
+            
 
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form2 form2 = new Form2();
+            form2.Show();
         }
     }
 }

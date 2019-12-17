@@ -8,7 +8,7 @@ namespace Mototecha
 {
     class NaudotiM : NaujiM
     {
-        public int rida;
+        
         public bool defektai;
     }
 }

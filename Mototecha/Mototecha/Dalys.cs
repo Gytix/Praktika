@@ -12,4 +12,5 @@ namespace Mototecha
         public string kategorija;
         public float kaina;
         public string tinkamumas;
+    }
 }

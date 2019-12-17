@@ -20,5 +20,6 @@ namespace Mototecha
         public double greitis;
         public double svoris;
         public double sukimo_m;
+        public int rida;
     }
 }
