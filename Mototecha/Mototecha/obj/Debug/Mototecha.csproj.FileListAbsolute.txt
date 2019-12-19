@@ -19,3 +19,11 @@ C:\Users\Gytis\Desktop\Kolegija.3 pusmetis\Antroji programavimo praktika\Praktik
 C:\Users\Gytis\Desktop\Kolegija.3 pusmetis\Antroji programavimo praktika\Praktika\Mototecha\Mototecha\bin\Debug\Mototecha.exe.config
 C:\Users\Gytis\Desktop\Kolegija.3 pusmetis\Antroji programavimo praktika\Praktika\Mototecha\Mototecha\bin\Debug\Mototecha.exe
 C:\Users\Gytis\Desktop\Kolegija.3 pusmetis\Antroji programavimo praktika\Praktika\Mototecha\Mototecha\bin\Debug\Mototecha.pdb
+C:\Users\Gytis\Desktop\Kolegija.3 pusmetis\Antroji programavimo praktika\Praktika\Mototecha\Mototecha\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Gytis\Desktop\Kolegija.3 pusmetis\Antroji programavimo praktika\Praktika\Mototecha\Mototecha\bin\Debug\Google.Protobuf.dll
+C:\Users\Gytis\Desktop\Kolegija.3 pusmetis\Antroji programavimo praktika\Praktika\Mototecha\Mototecha\bin\Debug\MySql.Data.dll
+C:\Users\Gytis\Desktop\Kolegija.3 pusmetis\Antroji programavimo praktika\Praktika\Mototecha\Mototecha\bin\Debug\Renci.SshNet.dll
+C:\Users\Gytis\Desktop\Kolegija.3 pusmetis\Antroji programavimo praktika\Praktika\Mototecha\Mototecha\bin\Debug\Google.Protobuf.xml
+C:\Users\Gytis\Desktop\Kolegija.3 pusmetis\Antroji programavimo praktika\Praktika\Mototecha\Mototecha\bin\Debug\MySql.Data.xml
+C:\Users\Gytis\Desktop\Kolegija.3 pusmetis\Antroji programavimo praktika\Praktika\Mototecha\Mototecha\bin\Debug\Renci.SshNet.xml
+C:\Users\Gytis\Desktop\Kolegija.3 pusmetis\Antroji programavimo praktika\Praktika\Mototecha\Mototecha\obj\Debug\Mototecha.csproj.CopyComplete

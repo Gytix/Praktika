@@ -40,12 +40,12 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(563, 177);
+            this.button1.Location = new System.Drawing.Point(344, 189);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(121, 23);
             this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
+            this.button1.Text = "Motociklai";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
@@ -104,6 +104,7 @@
             this.label5.Size = new System.Drawing.Size(123, 17);
             this.label5.TabIndex = 6;
             this.label5.Text = "Naudoti motociklai";
+            this.label5.Click += new System.EventHandler(this.Label5_Click);
             // 
             // label6
             // 
