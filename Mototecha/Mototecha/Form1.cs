@@ -39,31 +39,8 @@ namespace Mototecha
             this.Hide();
             Form2 form2 = new Form2();
             form2.Show();
-
-
-
-
-
-            Database duombaze = new Database();
-           
-            string querry = "SELECT * FROM `dalys`";
-           
-            MySqlCommand myCommand = new MySqlCommand(querry, duombaze.myDatabase);
-             duombaze.Open(); //prisijungus prie db ja atidaro
-            MySqlDataReader resultInfo = myCommand.ExecuteReader();
-            if (resultInfo.HasRows)
-            {
-                while (resultInfo.Read())
-                {
-                    MessageBox.Show("Prisijungta");
-                }
-            }
-            else
-            {
-            MessageBox.Show("Neprisijunge");
-            }
-            duombaze.Close();
-
+            
+            
 
             /*string conString = "Data Source = DESKTOP - FGH8R19\\SQLEXPRESS; Initial Catalog = DB_Practice; Integrated Security = True";
 
@@ -99,5 +76,32 @@ namespace Mototecha
           {
 
           }
-      }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            //kurt trecia forma dalim ir sita i daliu forma perkelt
+
+            List<string> dalisPavadinimas = new List<string>();
+            List<int> dalisGamintojoID = new List<int>();
+            List<int> dalisKaina = new List<int>();
+
+            Database duombaze = new Database();
+            duombaze.Open(); //prisijungus prie db ja atidaro
+
+            string querry2 = "SELECT * FROM `dalys`";
+            MySqlCommand myCommand2 = new MySqlCommand(querry2, duombaze.myDatabase);
+            var reader2 = myCommand2.ExecuteReader(); //dbopen nereik nes jau atidaryta
+            while (reader2.Read())
+            {
+                dalisPavadinimas.Add(reader2[1].ToString());
+                dalisKaina.Add(reader2.GetInt32(3));
+            }
+            duombaze.Close();
+        }
+    }
   }

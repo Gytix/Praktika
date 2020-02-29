@@ -30,7 +30,6 @@
         {
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -46,6 +45,8 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -57,7 +58,6 @@
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -79,17 +79,6 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "Siuo metu turimi nauji motociklai:";
             // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(279, 92);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(159, 116);
-            this.listBox1.TabIndex = 8;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.ListBox1_SelectedIndexChanged);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -102,7 +91,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(339, 276);
+            this.button1.Location = new System.Drawing.Point(318, 184);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 28);
@@ -113,13 +102,14 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(954, 13);
+            this.button2.Location = new System.Drawing.Point(48, 33);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 28);
             this.button2.TabIndex = 11;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // label3
             // 
@@ -229,6 +219,22 @@
             this.label15.TabIndex = 23;
             this.label15.Text = "Garantija:";
             // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(530, 399);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(0, 17);
+            this.label29.TabIndex = 37;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(318, 92);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(255, 24);
+            this.comboBox1.TabIndex = 39;
+            // 
             // label16
             // 
             this.label16.AutoSize = true;
@@ -328,14 +334,6 @@
             this.label28.TabIndex = 36;
             this.label28.Text = "label28";
             // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(530, 399);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(0, 17);
-            this.label29.TabIndex = 37;
-            // 
             // label17
             // 
             this.label17.AutoSize = true;
@@ -350,6 +348,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label29);
             this.Controls.Add(this.label28);
@@ -378,7 +377,6 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label4);
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -393,7 +391,6 @@
 
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
@@ -409,6 +406,8 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
@@ -420,7 +419,6 @@
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label17;
     }
 }
