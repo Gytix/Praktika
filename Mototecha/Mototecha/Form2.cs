@@ -56,6 +56,7 @@ namespace Mototecha
 
             while (reader.Read())
             {
+                //label = reader[0] (CIA ID)
                 motoTipas.Add(reader[1].ToString());
                 motoGamintojas.Add(reader[2].ToString());
                 motoModelis.Add(reader[3].ToString());
@@ -65,40 +66,7 @@ namespace Mototecha
                 motoKubatura.Add(reader.GetInt32(7));
                 motoRida.Add(reader.GetInt32(8));
                 motoID.Add(reader.GetInt32(9));
-                //label = reader[0] (CIA ID)
-                /*label16.Text = reader[1].ToString(); //tipas
-                label19.Text = reader[2].ToString(); //gamintojas
-                label20.Text = reader[3].ToString(); //modelis
-
-                label21.Text = reader[4].ToString(); //metai
-                label22.Text = reader[5].ToString(); //kaina
-                label23.Text = reader[6].ToString(); //spalva
-                label24.Text = reader[7].ToString(); //kubatura
-                label25.Text = reader[8].ToString(); //rida
-                label26.Text = reader[9].ToString(); //modelio id*/
             }
-            /*string querry2 = "SELECT * FROM `dalys`";
-            MySqlCommand myCommand2 = new MySqlCommand(querry2, duombaze.myDatabase); 
-            var reader2 = myCommand2.ExecuteReader(); //dbopen nereik nes jau atidaryta
-            while (reader2.Read())
-            {
-                dalisPavadinimas.Add(reader2[1].ToString());
-                dalisKaina.Add(reader2.GetInt32(3));
-
-            }/
-                /*if (reader.HasRows)
-                {
-                    while (reader.Read())
-                    {
-                        MessageBox.Show("Prisijungta");
-                    }
-                }
-
-                else
-                {
-                    MessageBox.Show("Neprisijungta");
-                }*/
-
                 duombaze.Close();
         }
     }

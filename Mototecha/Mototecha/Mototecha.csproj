@@ -65,6 +65,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="daliuForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="daliuForma.Designer.cs">
+      <DependentUpon>daliuForma.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dalys.cs" />
     <Compile Include="Database.cs" />
     <Compile Include="Duombazė.cs" />
@@ -84,6 +90,9 @@
     <Compile Include="NaujiM.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="daliuForma.resx">
+      <DependentUpon>daliuForma.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
