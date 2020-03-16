@@ -6,9 +6,14 @@ using System.Threading.Tasks;
 
 namespace Mototecha
 {
-    class NaudotiM : NaujiM
+    class NaudotiM //: IComparable<NaudotiM>
     {
-        
-        public bool defektai;
+        /*public int CompareTo(NaudotiM other) //NMList.Sort() metodui, pagal gamintoja
+        {
+            int surikiuotas;
+            surikiuotas = string.CompareOrdinal(this.gamintojas, other.gamintojas);
+
+            return surikiuotas;
+        }*/
     }
 }

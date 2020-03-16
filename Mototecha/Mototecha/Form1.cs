@@ -58,9 +58,9 @@ namespace Mototecha
             form3.Show();
 
 
-            //kurt trecia forma dalim ir sita i daliu forma perkelt
-
             
+
+
         }
     }
   }

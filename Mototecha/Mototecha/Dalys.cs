@@ -6,11 +6,19 @@ using System.Threading.Tasks;
 
 namespace Mototecha
 {
-    class Dalys
+    class Dalys : IComparable<Dalys>
     {
-        public string pavadinimas;
-        public string kategorija;
-        public float kaina;
-        public string tinkamumas;
+        public string pavadinimas { get; set; }
+        public string kategorija { get; set; }
+        public float kaina { get; set; }
+        public string tinkamumas { get; set; }
+
+        public int CompareTo(Dalys other) //NMList.Sort() metodui, pagal gamintoja
+        {
+            int surikiuotas;
+            surikiuotas = string.CompareOrdinal(this.pavadinimas, other.pavadinimas);
+
+            return surikiuotas;
+        }
     }
 }

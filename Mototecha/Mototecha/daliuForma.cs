@@ -17,25 +17,63 @@ namespace Mototecha
         {
             InitializeComponent();
         }
-
+        
         private void Button2_Click(object sender, EventArgs e)
         {
-            List<string> dalisPavadinimas = new List<string>();
-            List<int> dalisGamintojoID = new List<int>();
-            List<int> dalisKaina = new List<int>();
-
+            List<Dalys> dalys = new List<Dalys>();
             Database duombaze = new Database();
             string querry = "SELECT * FROM `dalys`";
+
             MySqlCommand myCommand = new MySqlCommand(querry, duombaze.myDatabase);
-            duombaze.Open(); //prisijungus prie db ja atidaro
+            duombaze.Open(); 
             
-            var reader2 = myCommand.ExecuteReader(); //dbopen nereik nes jau atidaryta
-            while (reader2.Read())
+            var reader = myCommand.ExecuteReader(); 
+            while (reader.Read())
             {
-                dalisPavadinimas.Add(reader2[1].ToString());
-                dalisKaina.Add(reader2.GetInt32(3));
+                Dalys Dalis = new Dalys();
+                Dalis.pavadinimas = reader["Pavadinimas"].ToString();
+                Dalis.kaina = Convert.ToInt32(reader["Kaina"]);
+                Dalis.tinkamumas = reader["Tinkamumas"].ToString();
+                dalys.Add(Dalis);
             }
+            dalys.Sort();
+
+            comboBox1.DataSource = dalys;
+            comboBox2.DataSource = dalys;
+            comboBox3.DataSource = dalys;
+            comboBox4.DataSource = dalys;
+
+            comboBox1.DisplayMember = "pavadinimas";
+            comboBox2.DisplayMember = "pavadinimas";
+            comboBox3.DisplayMember = "kaina";
+            comboBox4.DisplayMember = "tinkamumas";
+
+            comboBox1.SelectedIndex = -1;
+            comboBox2.SelectedIndex = -1;
+            comboBox3.SelectedIndex = -1;
+            comboBox4.SelectedIndex = -1;
+
             duombaze.Close();
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 pradinis = new Form1();
+            pradinis.Show();
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+
+            if (comboBox1.SelectedIndex != -1)
+            {
+                MessageBox.Show("Dėl detalių užsakymų kreipkitės elektroniniu paštu uzsakymai@mototecha.com");
+            }
+            else
+            {
+                MessageBox.Show("Pasirinkite detalę, prieš tai užkraudami duombazę");
+            }
         }
     }
 }
