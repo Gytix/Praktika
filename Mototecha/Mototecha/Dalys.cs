@@ -9,7 +9,6 @@ namespace Mototecha
     class Dalys : IComparable<Dalys>
     {
         public string pavadinimas { get; set; }
-        public string kategorija { get; set; }
         public float kaina { get; set; }
         public string tinkamumas { get; set; }
 

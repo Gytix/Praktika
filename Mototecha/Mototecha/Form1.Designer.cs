@@ -44,7 +44,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(91, 340);
+            this.button1.Location = new System.Drawing.Point(124, 414);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(121, 23);
@@ -83,7 +83,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(88, 110);
+            this.label4.Location = new System.Drawing.Point(103, 115);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(180, 17);
             this.label4.TabIndex = 5;
@@ -93,15 +93,16 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(585, 110);
+            this.label6.Location = new System.Drawing.Point(572, 115);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(104, 17);
             this.label6.TabIndex = 7;
             this.label6.Text = "Motociklų dalys";
+            this.label6.Click += new System.EventHandler(this.Label6_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(614, 340);
+            this.button3.Location = new System.Drawing.Point(592, 413);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 15;
@@ -112,18 +113,20 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 157);
+            this.pictureBox1.Location = new System.Drawing.Point(34, 156);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(396, 154);
+            this.pictureBox1.Size = new System.Drawing.Size(303, 233);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(479, 157);
+            this.pictureBox2.Location = new System.Drawing.Point(468, 156);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(299, 154);
+            this.pictureBox2.Size = new System.Drawing.Size(303, 233);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 17;
             this.pictureBox2.TabStop = false;
             // 
@@ -131,7 +134,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 385);
+            this.ClientSize = new System.Drawing.Size(826, 448);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button3);
