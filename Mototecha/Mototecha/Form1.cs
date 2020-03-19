@@ -67,5 +67,12 @@ namespace Mototecha
         {
 
         }
+
+        private void Button2_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            logInForma log = new logInForma();
+            log.Show();
+        }
     }
   }

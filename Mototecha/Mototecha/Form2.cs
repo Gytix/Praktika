@@ -22,6 +22,7 @@ namespace Mototecha
         public Form2()
         {
             InitializeComponent();
+            button4.Enabled = false;
         }
 
         private void Label2_Click(object sender, EventArgs e)

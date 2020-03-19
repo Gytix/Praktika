@@ -186,7 +186,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label4);
             this.Name = "daliuForma";
-            this.Text = "daliuForma";
+            this.Text = "Dalys";
             this.ResumeLayout(false);
             this.PerformLayout();
 

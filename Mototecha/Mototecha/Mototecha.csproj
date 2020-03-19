@@ -86,9 +86,21 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="logInForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="logInForma.Designer.cs">
+      <DependentUpon>logInForma.cs</DependentUpon>
+    </Compile>
     <Compile Include="NaujiM.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="regForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="regForma.Designer.cs">
+      <DependentUpon>regForma.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="daliuForma.resx">
       <DependentUpon>daliuForma.cs</DependentUpon>
     </EmbeddedResource>
@@ -97,6 +109,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="logInForma.resx">
+      <DependentUpon>logInForma.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -107,6 +122,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="regForma.resx">
+      <DependentUpon>regForma.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
