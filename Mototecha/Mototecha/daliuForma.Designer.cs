@@ -43,6 +43,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -187,11 +188,21 @@
             this.label6.TabIndex = 64;
             this.label6.Text = "label6";
             // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(364, 30);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(171, 28);
+            this.button4.TabIndex = 65;
+            this.button4.Text = "Keisti dalis";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
             // daliuForma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1020, 386);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button3);
@@ -231,5 +242,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button4;
     }
 }

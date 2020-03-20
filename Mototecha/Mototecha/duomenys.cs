@@ -4,16 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
-
 namespace Mototecha
 {
-    class Duombazė
+    class duomenys
     {
-        public MySqlConnection duombaze;    
-        
-        public Duombazė()
-        {
-        
-        }
+        public static List<NaujiM> NMList;
     }
 }

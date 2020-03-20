@@ -73,7 +73,7 @@
     </Compile>
     <Compile Include="Dalys.cs" />
     <Compile Include="Database.cs" />
-    <Compile Include="Duombazė.cs" />
+    <Compile Include="duomenys.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +92,7 @@
     <Compile Include="logInForma.Designer.cs">
       <DependentUpon>logInForma.cs</DependentUpon>
     </Compile>
+    <Compile Include="mocai.cs" />
     <Compile Include="NaujiM.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -102,6 +103,12 @@
       <DependentUpon>regForma.cs</DependentUpon>
     </Compile>
     <Compile Include="vartotojas.cs" />
+    <Compile Include="motoAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="motoAdmin.Designer.cs">
+      <DependentUpon>motoAdmin.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="daliuForma.resx">
       <DependentUpon>daliuForma.cs</DependentUpon>
     </EmbeddedResource>
@@ -113,6 +120,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="logInForma.resx">
       <DependentUpon>logInForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="motoAdmin.resx">
+      <DependentUpon>motoAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

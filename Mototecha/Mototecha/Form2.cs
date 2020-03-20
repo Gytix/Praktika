@@ -15,9 +15,11 @@ namespace Mototecha
     public partial class Form2 : Form
     {
         int privilegija;
-        public System.Windows.Forms.ComboBox.ObjectCollection Items { get; } //kad pridet i combo box listus
-        public object NaudotuMList { get; private set; }
-
+        //public System.Windows.Forms.ComboBox.ObjectCollection Items { get; } //kad pridet i combo box listus
+        //public object NaudotuMList { get; private set; }
+        //internal List<NaujiM> NMList { get; private set; }
+        //List<Customers> new_customer = new List<Customers>();
+        
         //public object NaudotuMList { get; private set; }
 
         public Form2(int privilegija)
@@ -26,7 +28,10 @@ namespace Mototecha
             button4.Enabled = false;
             this.privilegija = privilegija;
             label6.Text = privilegija.ToString();
-            
+            if (privilegija == 1)
+            {
+                button4.Enabled = true;
+            }
         }
 
         private void Label2_Click(object sender, EventArgs e)
@@ -54,8 +59,8 @@ namespace Mototecha
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            List<NaujiM> NMList = new List<NaujiM>();
             Database duombaze = new Database();
+            List<NaujiM> NMList = new List<NaujiM>();
             string querry = "SELECT * FROM `motociklas`";
             MySqlCommand myCommand = new MySqlCommand(querry, duombaze.myDatabase);
             duombaze.Open(); //prisijungus prie db ja atidaro
@@ -73,6 +78,7 @@ namespace Mototecha
                 Mocas.kubatura = Convert.ToInt32(reader["Kubatura"]);
                 Mocas.rida = Convert.ToInt32(reader["Rida"]);
                 NMList.Add(Mocas);
+                
             }
                 NMList.Sort();
 
@@ -135,7 +141,9 @@ namespace Mototecha
 
         private void Button4_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            motoAdmin adminMoto = new motoAdmin();
+            adminMoto.Show();
         }
     }
 }
