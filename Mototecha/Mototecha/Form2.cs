@@ -14,15 +14,19 @@ namespace Mototecha
 
     public partial class Form2 : Form
     {
+        int privilegija;
         public System.Windows.Forms.ComboBox.ObjectCollection Items { get; } //kad pridet i combo box listus
         public object NaudotuMList { get; private set; }
 
         //public object NaudotuMList { get; private set; }
 
-        public Form2()
+        public Form2(int privilegija)
         {
             InitializeComponent();
             button4.Enabled = false;
+            this.privilegija = privilegija;
+            label6.Text = privilegija.ToString();
+            
         }
 
         private void Label2_Click(object sender, EventArgs e)
@@ -125,8 +129,13 @@ namespace Mototecha
         private void Button3_Click_1(object sender, EventArgs e)
         {
             this.Hide();
-            Form1 pradinis = new Form1();
+            Form1 pradinis = new Form1(privilegija);
             pradinis.Show();
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

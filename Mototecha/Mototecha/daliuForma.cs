@@ -13,9 +13,12 @@ namespace Mototecha
 {
     public partial class daliuForma : Form
     {
-        public daliuForma()
+        int privilegija;
+        public daliuForma(int privilegija)
         {
             InitializeComponent();
+            this.privilegija = privilegija;
+            label6.Text = privilegija.ToString();
         }
         
         private void Button2_Click(object sender, EventArgs e)
@@ -59,7 +62,7 @@ namespace Mototecha
         private void Button3_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form1 pradinis = new Form1();
+            Form1 pradinis = new Form1(privilegija);
             pradinis.Show();
         }
 

@@ -101,6 +101,7 @@
     <Compile Include="regForma.Designer.cs">
       <DependentUpon>regForma.cs</DependentUpon>
     </Compile>
+    <Compile Include="vartotojas.cs" />
     <EmbeddedResource Include="daliuForma.resx">
       <DependentUpon>daliuForma.cs</DependentUpon>
     </EmbeddedResource>

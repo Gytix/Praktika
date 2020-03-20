@@ -13,9 +13,12 @@ namespace Mototecha
 {
     public partial class Form1 : Form
     {
-        public Form1()
+        int privilegija;
+        public Form1(int privilegija)
         {
             InitializeComponent();
+            this.privilegija = privilegija;
+           
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -37,7 +40,7 @@ namespace Mototecha
         private void Button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form2 form2 = new Form2();
+            Form2 form2 = new Form2(privilegija); //mocu forma
             form2.Show();
         }
 
@@ -54,13 +57,8 @@ namespace Mototecha
         private void Button3_Click(object sender, EventArgs e)
         {
             this.Hide();
-            daliuForma form3 = new daliuForma();
+            daliuForma form3 = new daliuForma(privilegija);
             form3.Show();
-
-
-            
-
-
         }
 
         private void Label6_Click(object sender, EventArgs e)
