@@ -72,6 +72,12 @@
       <DependentUpon>daliuForma.cs</DependentUpon>
     </Compile>
     <Compile Include="Dalys.cs" />
+    <Compile Include="dalysAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dalysAdmin.Designer.cs">
+      <DependentUpon>dalysAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Database.cs" />
     <Compile Include="duomenys.cs" />
     <Compile Include="Form1.cs">
@@ -111,6 +117,9 @@
     </Compile>
     <EmbeddedResource Include="daliuForma.resx">
       <DependentUpon>daliuForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dalysAdmin.resx">
+      <DependentUpon>dalysAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

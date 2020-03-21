@@ -15,11 +15,12 @@ namespace Mototecha
     public partial class Form2 : Form
     {
         int privilegija;
+        List<NaujiM> NMList = new List<NaujiM>();
         //public System.Windows.Forms.ComboBox.ObjectCollection Items { get; } //kad pridet i combo box listus
         //public object NaudotuMList { get; private set; }
         //internal List<NaujiM> NMList { get; private set; }
         //List<Customers> new_customer = new List<Customers>();
-        
+
         //public object NaudotuMList { get; private set; }
 
         public Form2(int privilegija)
@@ -60,7 +61,7 @@ namespace Mototecha
         private void Button2_Click(object sender, EventArgs e)
         {
             Database duombaze = new Database();
-            List<NaujiM> NMList = new List<NaujiM>();
+            
             string querry = "SELECT * FROM `motociklas`";
             MySqlCommand myCommand = new MySqlCommand(querry, duombaze.myDatabase);
             duombaze.Open(); //prisijungus prie db ja atidaro
@@ -142,7 +143,7 @@ namespace Mototecha
         private void Button4_Click(object sender, EventArgs e)
         {
             this.Hide();
-            motoAdmin adminMoto = new motoAdmin();
+            motoAdmin adminMoto = new motoAdmin(privilegija);
             adminMoto.Show();
         }
     }

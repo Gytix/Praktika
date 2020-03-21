@@ -78,5 +78,12 @@ namespace Mototecha
                 MessageBox.Show("Pasirinkite detalę, prieš tai užkraudami duombazę");
             }
         }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            dalysAdmin adminDalys = new dalysAdmin(privilegija);
+            adminDalys.Show();
+        }
     }
 }

@@ -13,9 +13,10 @@ namespace Mototecha
 {
     public partial class motoAdmin : Form
     {
-        public motoAdmin() 
+        int privilegija;
+        public motoAdmin(int privilegija) 
         {
-            
+            this.privilegija = privilegija;
             InitializeComponent();
             button1.Enabled = false;
             button2.Enabled = false;
@@ -58,6 +59,13 @@ namespace Mototecha
                     MessageBox.Show("Motociklo įkėlimas nesėkmingas");
                 }
             
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 pradinis = new Form1(privilegija);
+            pradinis.Show();
         }
     }
 }
