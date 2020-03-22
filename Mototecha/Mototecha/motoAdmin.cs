@@ -21,6 +21,7 @@ namespace Mototecha
             InitializeComponent();
             button1.Enabled = false;
             button2.Enabled = false;
+            button4.Enabled = false;
         }
 
         private void CheckBox1_CheckedChanged(object sender, EventArgs e)
@@ -34,7 +35,8 @@ namespace Mototecha
 
         private void CheckBox2_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox2.Checked == true)
+            if (checkBox2.Checked == true && textBox9.Text != null && textBox10.Text != null && textBox11.Text != null &&
+            textBox12.Text != null && textBox13.Text != null && textBox14.Text != null && textBox15.Text != null && textBox16.Text != null)
             {
                 button2.Enabled = true;
             }
@@ -93,24 +95,20 @@ namespace Mototecha
             motoRedagavimui.Sort();
 
             comboBox1.DataSource = motoRedagavimui;
-            comboBox2.DataSource = motoRedagavimui;//delete
-            comboBox9.DataSource = motoRedagavimui;//delete
-            comboBox12.DataSource = motoRedagavimui;//delete
+            comboBox2.DataSource = motoRedagavimui;
+            comboBox9.DataSource = motoRedagavimui;
+            comboBox12.DataSource = motoRedagavimui;
 
             comboBox1.DisplayMember = "pilnasPavadinimas";
-            comboBox2.DisplayMember = "pilnasPavadinimas";//delete
-            comboBox9.DisplayMember = "Gamintojas";//delete
-            comboBox12.DisplayMember = "Modelis";//delete
+            comboBox2.DisplayMember = "pilnasPavadinimas";
+            comboBox9.DisplayMember = "Gamintojas";
+            comboBox12.DisplayMember = "Modelis";
 
             comboBox1.SelectedIndex = -1;
-            comboBox2.SelectedIndex = -1; //delete
-            comboBox9.SelectedIndex = -1; //delete
-            comboBox12.SelectedIndex = -1; //delete
+            comboBox2.SelectedIndex = -1; 
+            comboBox9.SelectedIndex = -1; 
+            comboBox12.SelectedIndex = -1;
 
-            
-
-            //comboBox9.SelectedIndex = -1;
-            //comboBox12.SelectedIndex = -1;
             duombaze.Close();
         }
 
@@ -167,7 +165,6 @@ namespace Mototecha
             myCommand.Parameters.AddWithValue("@Kubatura", textBox11.Text);
             myCommand.Parameters.AddWithValue("@Rida", textBox10.Text);
             myCommand.Parameters.AddWithValue("@Kaina", textBox9.Text);
-
             myCommand.ExecuteNonQuery();
 
             if (myCommand.ExecuteNonQuery() == 1)

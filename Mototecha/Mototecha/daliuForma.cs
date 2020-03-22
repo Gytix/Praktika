@@ -17,9 +17,11 @@ namespace Mototecha
         public daliuForma(int privilegija)
         {
             InitializeComponent();
+            button4.Enabled = false;
             this.privilegija = privilegija;
             if (privilegija == 1)
             {
+                button4.Enabled = true;
                 label6.Text = "Administratoriaus";
             }
             else

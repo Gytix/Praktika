@@ -42,7 +42,7 @@ namespace Mototecha
 
         private void CheckBox2_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox2.Checked == true)
+            if (checkBox2.Checked == true && textBox4.Text != null && textBox5.Text != null && textBox6.Text != null)
             {
                 button2.Enabled = true;
             }
@@ -102,22 +102,16 @@ namespace Mototecha
             dalys.Sort();
 
             comboBox1.DataSource = dalys;
-           // comboBox2.DataSource = dalys;
-            //comboBox3.DataSource = dalys;
             comboBox4.DataSource = dalys;
             comboBox5.DataSource = dalys;
             comboBox6.DataSource = dalys;
 
             comboBox1.DisplayMember = "pavadinimas";
             comboBox4.DisplayMember = "pavadinimas";
-           // comboBox2.DisplayMember = "kaina";
             comboBox5.DisplayMember = "kaina";
-           // comboBox3.DisplayMember = "tinkamumas";
             comboBox6.DisplayMember = "tinkamumas";
 
             comboBox1.SelectedIndex = -1;
-            //comboBox2.SelectedIndex = -1;
-            //comboBox3.SelectedIndex = -1;
             comboBox4.SelectedIndex = -1;
             comboBox5.SelectedIndex = -1;
             comboBox6.SelectedIndex = -1;
