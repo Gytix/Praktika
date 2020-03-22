@@ -40,7 +40,7 @@ namespace Mototecha
             }
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e) //ikelimas
         {
                 Database duombaze = new Database();
                 string insertQuery = "INSERT INTO praktikai.motociklas(Tipas, Gamintojas, Modelis, Metai, Spalva, Kubatura, Rida, Kaina)" +
@@ -68,7 +68,7 @@ namespace Mototecha
             pradinis.Show();
         }
 
-        private void Button5_Click(object sender, EventArgs e)
+        private void Button5_Click(object sender, EventArgs e) //nuskaitymas
         {
             Database duombaze = new Database();
 
@@ -114,7 +114,7 @@ namespace Mototecha
             duombaze.Close();
         }
 
-        private void Button4_Click(object sender, EventArgs e)
+        private void Button4_Click(object sender, EventArgs e) //istrynimas
         {
             Database duombaze = new Database();
             string istrynimui = comboBox12.Text;
