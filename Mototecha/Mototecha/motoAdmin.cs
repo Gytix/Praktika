@@ -14,13 +14,13 @@ namespace Mototecha
     public partial class motoAdmin : Form
     {
         int privilegija;
+        List<NaujiM> motoRedagavimui = new List<NaujiM>();
         public motoAdmin(int privilegija) 
         {
             this.privilegija = privilegija;
             InitializeComponent();
             button1.Enabled = false;
             button2.Enabled = false;
-            
         }
 
         private void CheckBox1_CheckedChanged(object sender, EventArgs e)
@@ -66,6 +66,87 @@ namespace Mototecha
             this.Hide();
             Form1 pradinis = new Form1(privilegija);
             pradinis.Show();
+        }
+
+        private void Button5_Click(object sender, EventArgs e)
+        {
+            Database duombaze = new Database();
+
+            string querry = "SELECT * FROM `motociklas`";
+            MySqlCommand myCommand = new MySqlCommand(querry, duombaze.myDatabase);
+            duombaze.Open(); //prisijungus prie db ja atidaro
+            var reader = myCommand.ExecuteReader();
+            
+            while (reader.Read())
+            {
+                NaujiM Mocas = new NaujiM();
+                Mocas.gamintojas = reader["Gamintojas"].ToString();
+                Mocas.modelis = reader["Modelis"].ToString();
+                Mocas.tipas = reader["Tipas"].ToString();
+                Mocas.metai = Convert.ToInt32(reader["Metai"]);
+                Mocas.kaina = Convert.ToInt32(reader["Kaina"]);
+                Mocas.spalva = reader["Spalva"].ToString();
+                Mocas.kubatura = Convert.ToInt32(reader["Kubatura"]);
+                Mocas.rida = Convert.ToInt32(reader["Rida"]);
+                motoRedagavimui.Add(Mocas);
+            }
+            motoRedagavimui.Sort();
+
+            comboBox1.DataSource = motoRedagavimui;
+            comboBox2.DataSource = motoRedagavimui;//delete
+            comboBox9.DataSource = motoRedagavimui;//delete
+            comboBox12.DataSource = motoRedagavimui;//delete
+
+            comboBox1.DisplayMember = "pilnasPavadinimas";
+            comboBox2.DisplayMember = "pilnasPavadinimas";//delete
+            comboBox9.DisplayMember = "Gamintojas";//delete
+            comboBox12.DisplayMember = "Modelis";//delete
+
+            comboBox1.SelectedIndex = -1;
+            comboBox2.SelectedIndex = -1; //delete
+            comboBox9.SelectedIndex = -1; //delete
+            comboBox12.SelectedIndex = -1; //delete
+
+            
+
+            //comboBox9.SelectedIndex = -1;
+            //comboBox12.SelectedIndex = -1;
+            duombaze.Close();
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            Database duombaze = new Database();
+            string istrynimui = comboBox12.Text;
+            string deleteQuerry = "DELETE FROM `motociklas` WHERE Modelis= '" + istrynimui + "';";
+            duombaze.Open(); //prisijungus prie db ja atidaro
+            
+            MySqlCommand myCommand = new MySqlCommand(deleteQuerry, duombaze.myDatabase);
+            myCommand.Parameters.AddWithValue("@Modelis", this.comboBox12.SelectedItem);
+
+            if (myCommand.ExecuteNonQuery() == 1)
+            {
+                MessageBox.Show("Motociklo istrynimas sėkmingas");
+            }
+            else
+            {
+                MessageBox.Show("Motociklo istrynimas nesėkmingas");
+            }
+            
+            duombaze.Close();
+        }
+
+        private void ComboBox9_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CheckBox3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox3.Checked == true)
+            {
+                button4.Enabled = true;
+            }
         }
     }
 }

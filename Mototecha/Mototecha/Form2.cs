@@ -142,8 +142,10 @@ namespace Mototecha
 
         private void Button4_Click(object sender, EventArgs e)
         {
+            
             this.Hide();
             motoAdmin adminMoto = new motoAdmin(privilegija);
+            //adminMoto.recieve(NMList);
             adminMoto.Show();
         }
     }

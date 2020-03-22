@@ -31,3 +31,4 @@ C:\Users\Gytis\Desktop\Kolegija.3 pusmetis\Antroji programavimo praktika\Praktik
 C:\Users\Gytis\Desktop\Kolegija.3 pusmetis\Antroji programavimo praktika\Praktika\Mototecha\Mototecha\obj\Debug\Mototecha.logInForma.resources
 C:\Users\Gytis\Desktop\Kolegija.3 pusmetis\Antroji programavimo praktika\Praktika\Mototecha\Mototecha\obj\Debug\Mototecha.regForma.resources
 C:\Users\Gytis\Desktop\Kolegija.3 pusmetis\Antroji programavimo praktika\Praktika\Mototecha\Mototecha\obj\Debug\Mototecha.motoAdmin.resources
+C:\Users\Gytis\Desktop\Kolegija.3 pusmetis\Antroji programavimo praktika\Praktika\Mototecha\Mototecha\obj\Debug\Mototecha.dalysAdmin.resources
