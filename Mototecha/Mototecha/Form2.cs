@@ -27,11 +27,18 @@ namespace Mototecha
         {
             InitializeComponent();
             button4.Enabled = false;
-            this.privilegija = privilegija;
-            label6.Text = privilegija.ToString();
+            this.privilegija = privilegija;;
             if (privilegija == 1)
             {
                 button4.Enabled = true;
+            }
+            if (privilegija == 1)
+            {
+                label6.Text = "Administratoriaus";
+            }
+            else
+            {
+                label6.Text = "Paprasto vartotojo";
             }
         }
 

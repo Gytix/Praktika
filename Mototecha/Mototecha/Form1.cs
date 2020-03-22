@@ -18,7 +18,14 @@ namespace Mototecha
         {
             InitializeComponent();
             this.privilegija = privilegija;
-           
+            if (privilegija == 1)
+            {
+                label7.Text = "Administratoriaus";
+            }
+            else
+            {
+                label7.Text = "Paprasto vartotojo";
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)

@@ -39,7 +39,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(159, 109);
+            this.label1.Location = new System.Drawing.Point(108, 79);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(135, 17);
             this.label1.TabIndex = 0;
@@ -48,7 +48,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(209, 161);
+            this.label2.Location = new System.Drawing.Point(158, 131);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(85, 17);
             this.label2.TabIndex = 1;
@@ -56,21 +56,21 @@
             // 
             // tBvardas
             // 
-            this.tBvardas.Location = new System.Drawing.Point(316, 106);
+            this.tBvardas.Location = new System.Drawing.Point(265, 76);
             this.tBvardas.Name = "tBvardas";
             this.tBvardas.Size = new System.Drawing.Size(100, 22);
             this.tBvardas.TabIndex = 2;
             // 
             // tBslaptazodis
             // 
-            this.tBslaptazodis.Location = new System.Drawing.Point(316, 158);
+            this.tBslaptazodis.Location = new System.Drawing.Point(265, 128);
             this.tBslaptazodis.Name = "tBslaptazodis";
             this.tBslaptazodis.Size = new System.Drawing.Size(100, 22);
             this.tBslaptazodis.TabIndex = 3;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(166, 224);
+            this.button1.Location = new System.Drawing.Point(115, 194);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(86, 30);
             this.button1.TabIndex = 4;
@@ -80,7 +80,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(316, 224);
+            this.button2.Location = new System.Drawing.Point(265, 194);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(103, 30);
             this.button2.TabIndex = 5;
@@ -92,7 +92,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(497, 310);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.tBslaptazodis);

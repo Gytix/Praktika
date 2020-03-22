@@ -18,7 +18,15 @@ namespace Mototecha
         {
             InitializeComponent();
             this.privilegija = privilegija;
-            label6.Text = privilegija.ToString();
+            if (privilegija == 1)
+            {
+                label6.Text = "Administratoriaus";
+            }
+            else
+            {
+                label6.Text = "Paprasto vartotojo";
+            }
+            
         }
         
         private void Button2_Click(object sender, EventArgs e)

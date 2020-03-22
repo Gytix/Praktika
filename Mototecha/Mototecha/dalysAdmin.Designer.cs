@@ -54,6 +54,8 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox3
@@ -72,7 +74,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(480, 283);
+            this.button2.Location = new System.Drawing.Point(472, 286);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 30);
             this.button2.TabIndex = 91;
@@ -93,7 +95,7 @@
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(445, 81);
+            this.checkBox2.Location = new System.Drawing.Point(444, 81);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(185, 21);
             this.checkBox2.TabIndex = 89;
@@ -115,7 +117,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(340, 211);
+            this.label3.Location = new System.Drawing.Point(376, 240);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(92, 17);
             this.label3.TabIndex = 128;
@@ -124,7 +126,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(340, 130);
+            this.label11.Location = new System.Drawing.Point(376, 133);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(134, 17);
             this.label11.TabIndex = 127;
@@ -133,7 +135,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(340, 171);
+            this.label10.Location = new System.Drawing.Point(376, 205);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(48, 17);
             this.label10.TabIndex = 126;
@@ -188,17 +190,17 @@
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(894, 81);
+            this.checkBox3.Location = new System.Drawing.Point(844, 81);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(93, 21);
             this.checkBox3.TabIndex = 133;
-            this.checkBox3.Text = "Istrinti dali";
+            this.checkBox3.Text = "Ištrinti dalį";
             this.checkBox3.UseVisualStyleBackColor = true;
             this.checkBox3.CheckedChanged += new System.EventHandler(this.CheckBox3_CheckedChanged);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(894, 283);
+            this.button4.Location = new System.Drawing.Point(844, 286);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 30);
             this.button4.TabIndex = 136;
@@ -237,7 +239,7 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(493, 127);
+            this.comboBox1.Location = new System.Drawing.Point(529, 131);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 24);
             this.comboBox1.TabIndex = 142;
@@ -277,23 +279,41 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(493, 211);
+            this.textBox4.Location = new System.Drawing.Point(529, 237);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 22);
+            this.textBox4.Size = new System.Drawing.Size(121, 22);
             this.textBox4.TabIndex = 150;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(493, 168);
+            this.textBox5.Location = new System.Drawing.Point(529, 202);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 22);
+            this.textBox5.Size = new System.Drawing.Size(121, 22);
             this.textBox5.TabIndex = 149;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(529, 168);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(121, 22);
+            this.textBox6.TabIndex = 152;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(376, 171);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(139, 17);
+            this.label8.TabIndex = 151;
+            this.label8.Text = "Naujas pavadinimas:";
             // 
             // dalysAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1154, 367);
+            this.ClientSize = new System.Drawing.Size(1049, 367);
+            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox1);
@@ -321,7 +341,7 @@
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
             this.Name = "dalysAdmin";
-            this.Text = "dalysAdmin";
+            this.Text = "Dalių informacijos redagavimas";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -354,5 +374,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label label8;
     }
 }

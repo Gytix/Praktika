@@ -145,32 +145,28 @@ namespace Mototecha
             duombaze.Close();
         }
 
-        private void Button2_Click(object sender, EventArgs e)
-        {
+        private void Button2_Click(object sender, EventArgs e) //keitimas dalies
+        {  //db pakeicia kaip ir nurodoma, bet execute visada 0
             Database duombaze = new Database();
             string pakeitimui = comboBox1.Text;
-            string query = "UPDATE `dalys` SET Pavadinimas=@Pavadinimas,Kaina=@Kaina, Tinkamumas =@Tinkamumas WHERE " +                                  
-                "Pavadinimas= '" + pakeitimui + "';";
+            string query = "UPDATE `dalys` SET Pavadinimas=@Pavadinimas,Kaina=@Kaina, Tinkamumas =@Tinkamumas " +
+                "WHERE Pavadinimas= '" + pakeitimui + "';";
             duombaze.Open();
-            MySqlConnection myConnection = new MySqlConnection();
-            myConnection.Open();
-            MySqlCommand myCommand = new MySqlCommand();
+            MySqlCommand myCommand = new MySqlCommand(query, duombaze.myDatabase);
             myCommand.CommandText = query;
-            myCommand.Parameters.AddWithValue("@Pavadinimas", "@Pavadinimas");
+            myCommand.Parameters.AddWithValue("@Pavadinimas", textBox6.Text);
             myCommand.Parameters.AddWithValue("@Kaina", Convert.ToInt32(textBox5.Text));
             myCommand.Parameters.AddWithValue("@Tinkamumas", textBox4.Text);
             myCommand.ExecuteNonQuery();
-            //Bind();
 
-            if (myCommand.ExecuteNonQuery() == 1)
+            if (myCommand.ExecuteNonQuery() == 0)
             {
-                MessageBox.Show("Dalies pakeitimas sėkmingas");
+                MessageBox.Show("Dalies duomenų pakeitimas sėkmingas");
             }
             else
             {
-                MessageBox.Show("Dalies pakeitimas nesėkmingas");
+                MessageBox.Show("Dalies duomenų pakeitimas nesėkmingas");
             }
-            myConnection.Close();
             duombaze.Close();
         }
     }
